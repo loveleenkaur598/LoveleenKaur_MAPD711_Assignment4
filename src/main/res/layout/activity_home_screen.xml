@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenColor"
+    android:orientation="vertical"
+    tools:context=".HomeScreenActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/titleHome"
+        android:textColor="@color/headingColor"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/nike"
+            android:layout_width="190dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nike_logo"
+            android:onClick="findBrandLocation"/>
+
+        <ImageButton
+            android:id="@+id/husdonBay"
+            android:layout_width="190dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hudsons_bay_logo"
+            android:onClick="findBrandLocation" />
+
+        <ImageButton
+            android:id="@+id/tommy_hilfiger"
+            android:layout_width="190dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tommy_hilfiger_logo"
+            android:onClick="findBrandLocation" />
+
+        <ImageButton
+            android:id="@+id/roots"
+            android:layout_width="190dp"
+            android:layout_height="69dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/roots_logo"
+            android:onClick="findBrandLocation" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

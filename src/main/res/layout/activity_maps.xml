@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screenColor"
+    tools:context=".MapsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="49dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:background="#009C27B0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="Stores"
+            android:textColor="@color/headingColor"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/B_Scarborough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_button"
+            android:onClick="getLocationName"
+            android:text="@string/buttonScarborough"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/B_NorthYork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/buttonNorthYork"
+            android:textSize="14dp"
+            android:onClick="getLocationName" />
+
+        <Button
+            android:id="@+id/B_DownTown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/buttonDowntown"
+            android:textSize="14dp"
+            android:onClick="getLocationName" />
+
+        <Button
+            android:id="@+id/B_Oakville"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="@string/buttonOakville"
+            android:textSize="14dp"
+            android:onClick="getLocationName" />
+    </LinearLayout>
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        tools:context="com.example.loveleenkaur_mapd711_assignment4.mapsdemo.MapsActivity"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/ZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/zoomIn"
+            android:textSize="14dp"
+            android:onClick="onZoom"/>
+
+        <Button
+            android:id="@+id/ZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/ZoomOut"
+            android:textSize="14dp"
+            android:onClick="onZoom" />
+
+
+
+        <Button
+            android:id="@+id/satellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/Satellite"
+            android:textSize="14dp"
+            android:onClick="satView" />
+    </LinearLayout>
+
+
+</LinearLayout>

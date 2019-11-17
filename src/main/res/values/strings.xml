@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoveleenKaur_MAPD711_Assignment4</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="buttonScarborough">Scarborough</string>
+    <string name="buttonNorthYork">North York</string>
+    <string name="buttonOakville">Oakville</string>
+    <string name="buttonDowntown">Downtown</string>
+    <string name="titleHome">Welcome, Find The nearest stores in GTA!</string>
+    <string name="zoomIn">Zoom In</string>
+    <string name="ZoomOut">Zoom Out</string>
+    <string name="Satellite">Satellite</string>
+</resources>
